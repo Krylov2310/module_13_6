@@ -125,7 +125,7 @@ async def send_calories(message, state):
 
 @dp.message_handler(commands=['start'])
 async def start(message):
-    text = 'Привет, я бот помогающий твоему здоровью!\nВведите ваш пол:'
+    text = 'Привет, я бот помогающий твоему здоровью!\nВыберите ваш пол:'
     await message.answer(text, reply_markup=key_gender)
 
 
